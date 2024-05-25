@@ -7,9 +7,9 @@ if($_SERVER['REQUEST_METHOD'] === "GET"){
     if($result = $conn->query($stmt)){
       $arr = array();
       while($row = $result->fetch_assoc()){
-        if ($row !== null && isset($row['name'])) {
+        
           array_push($arr, $row['name']);
-        }
+        
       }
       echo json_encode(['categories' => $arr]);
     }
