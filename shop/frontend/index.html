@@ -16,7 +16,6 @@
       src="https://kit.fontawesome.com/63feca257c.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
@@ -38,10 +37,10 @@
         </div>
         <div class="right-heading">
           <div class="login-status">
-            <div class="login"><i class="fas fa-sign-in-alt fa-2x"></i></div>
-            <div class="register"><i class="fas fa-user-times fa-2x"></i></div>
-            <div class="logout"><i class="fas fa-sign-out-alt fa-2x"></i></div>
-            <div class="logged-user">
+            <div class="login" title="login"><i class="fas fa-sign-in-alt fa-2x"></i></div>
+            <div class="register" title="register"><i class="fas fa-user-times fa-2x"></i></div>
+            <div class="logout" title="logout"><i class="fas fa-sign-out-alt fa-2x"></i></div>
+            <div class="logged-user" title="logged user">
               <i class="fas fa-user-check fa-2x"></i
               ><span class="username">username</span>
             </div>
@@ -54,12 +53,17 @@
     <main>
       <section class="banner">
         <div class="swiper">
-          <div class="swipper-swapper"></div>
+          <div class="swiper-wrapper"></div>
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </section>
+      <section class="featured-products">
+        <h2>Featured Products</h2>
+
+      </section>
+      <section class="new-arrivals"></section>
     </main>
     <footer>
       <div class="social-share">
@@ -99,5 +103,12 @@
             <li>Cookie Policy</li>
         </div>
     </footer>
+    <script  src="script.js" defer></script>
+    <script src="baner.js"></script>
+    <script src="menu.js"></script>
+    <script src="featured.js"></script>
+    <script src="login.js"></script>
+    
+
   </body>
 </html>
